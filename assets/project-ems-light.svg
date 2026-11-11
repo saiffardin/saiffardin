@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="196" viewBox="0 0 410 196" role="img" aria-labelledby="t d">
+<title id="t">Election Management System</title>
+<desc id="d">gov · elections. Role-based election operations: admins, returning and presiding officers set up polling centers, manage candidates and finalize results. Built with React, Redux, Yup, Docker.</desc>
+<style>
+  text { font-kerning: normal; }
+  .rise { animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
+  .fade { animation: fade .8s ease both; }
+  .rule { animation: draw 1.2s cubic-bezier(.6,0,.2,1) both; stroke-dasharray: 1000; }
+  @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes draw { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+  @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+  @keyframes ping { 0% { transform: scale(1); opacity: .55; } 80%, 100% { transform: scale(2.6); opacity: 0; } }
+  
+        @keyframes grow { 0% { transform: scaleY(0); } 30%, 85% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+        @keyframes squeeze { 0% { transform: scaleX(1.25); opacity: .3; } 30%, 85% { transform: scaleX(1); opacity: 1; } 100% { transform: scaleX(1.25); opacity: .3; } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; } }
+</style>
+
+      <rect x=".5" y=".5" width="409" height="195" rx="12" fill="none" stroke="#e7e2dc"/>
+      <g class="rise">
+        <text x="22 28.3 34.6 40.9 47.2 53.5 59.8 66.1 72.4 78.7 85 91.3 97.6 103.9 110.2" y="34" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#a5691a" xml:space="preserve">gov · elections</text>
+        <circle cx="327.6" cy="30.5" r="3.5" fill="none" stroke="#a8a29e"/>
+        <text x="337.6 343.9 350.2 356.5 362.8 369.1 375.4 381.7" y="34" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#57534e" xml:space="preserve">internal</text>
+        <text x="22" y="66" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="19" font-weight="650" fill="#1c1917" letter-spacing="-0.3">Election Management System</text>
+        <text x="22" y="92" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="13" font-weight="400" fill="#57534e">Role-based election operations: admins, returning and</text><text x="22" y="111" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="13" font-weight="400" fill="#57534e">presiding officers set up polling centers, manage</text><text x="22" y="130" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="13" font-weight="400" fill="#57534e">candidates and finalize results.</text>
+      </g>
+      <g class="fade" style="animation-delay:.3s"><rect x="22" y="158" width="45.5" height="20" rx="10" fill="none" stroke="#e7e2dc"/><text x="29 35.3 41.6 47.9 54.2" y="172" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#57534e" xml:space="preserve">React</text><rect x="73.5" y="158" width="45.5" height="20" rx="10" fill="none" stroke="#e7e2dc"/><text x="80.5 86.8 93.1 99.4 105.7" y="172" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#57534e" xml:space="preserve">Redux</text><rect x="125" y="158" width="32.9" height="20" rx="10" fill="none" stroke="#e7e2dc"/><text x="132 138.3 144.6" y="172" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#57534e" xml:space="preserve">Yup</text><rect x="163.9" y="158" width="51.8" height="20" rx="10" fill="none" stroke="#e7e2dc"/><text x="170.9 177.2 183.5 189.8 196.1 202.4" y="172" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#57534e" xml:space="preserve">Docker</text></g>
+      <g class="fade" style="animation-delay:.5s">
+      <clipPath id="ballot-clip"><rect x="316" y="134" width="44" height="20"/></clipPath>
+      <g clip-path="url(#ballot-clip)">
+        <g><rect x="328" y="136" width="20" height="16" rx="1.5" fill="#faf7f2" stroke="#a5691a"/>
+          <path d="M332 144 l3 3 l6 -6" fill="none" stroke="#a5691a" stroke-width="1.5"/>
+          <animateTransform attributeName="transform" type="translate" values="0 -12;0 -12;0 22;0 22" keyTimes="0;.3;.62;1" dur="3.6s" repeatCount="indefinite" calcMode="spline" keySplines="0 0 1 1;.5 0 .7 1;0 0 1 1"/>
+        </g>
+      </g>
+      <rect x="316" y="154" width="44" height="22" rx="3" fill="#faf7f2" stroke="#a8a29e"/>
+      <line x1="326" y1="154" x2="350" y2="154" stroke="#1c1917" stroke-width="2"/></g>
+</svg>

@@ -1,0 +1,13 @@
+{
+  "name": "saiffardin",
+  "private": true,
+  "description": "GitHub profile README: animated SVGs generated with zero-dependency Node.js",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "build:static": "node scripts/build.mjs --static",
+    "build:live": "node scripts/build.mjs --live",
+    "preview": "node scripts/preview.mjs"
+  }
+}

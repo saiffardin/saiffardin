@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="410" height="196" viewBox="0 0 410 196" role="img" aria-labelledby="t d">
+<title id="t">Billion API Admin</title>
+<desc id="d">platform · admin. Built the admin panel and led its migration from the Next.js 14 Pages Router to the Next.js 15 App Router. Built with Next.js 15, NextAuth, Recharts.</desc>
+<style>
+  text { font-kerning: normal; }
+  .rise { animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
+  .fade { animation: fade .8s ease both; }
+  .rule { animation: draw 1.2s cubic-bezier(.6,0,.2,1) both; stroke-dasharray: 1000; }
+  @keyframes rise { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+  @keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+  @keyframes draw { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+  @keyframes blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+  @keyframes ping { 0% { transform: scale(1); opacity: .55; } 80%, 100% { transform: scale(2.6); opacity: 0; } }
+  
+        @keyframes grow { 0% { transform: scaleY(0); } 30%, 85% { transform: scaleY(1); } 100% { transform: scaleY(0); } }
+        @keyframes squeeze { 0% { transform: scaleX(1.25); opacity: .3; } 30%, 85% { transform: scaleX(1); opacity: 1; } 100% { transform: scaleX(1.25); opacity: .3; } }
+  @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; } }
+</style>
+
+      <rect x=".5" y=".5" width="409" height="195" rx="12" fill="none" stroke="#2e2a27"/>
+      <g class="rise">
+        <text x="22 28.3 34.6 40.9 47.2 53.5 59.8 66.1 72.4 78.7 85 91.3 97.6 103.9 110.2 116.5" y="34" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#d4a054" xml:space="preserve">platform · admin</text>
+        <circle cx="333.9" cy="30.5" r="3.5" fill="none" stroke="#57534e"/>
+        <text x="343.9 350.2 356.5 362.8 369.1 375.4 381.7" y="34" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#a8a29e" xml:space="preserve">shipped</text>
+        <text x="22" y="66" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="19" font-weight="650" fill="#faf5ef" letter-spacing="-0.3">Billion API Admin</text>
+        <text x="22" y="92" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="13" font-weight="400" fill="#a8a29e">Built the admin panel and led its migration from the</text><text x="22" y="111" font-family="'Inter','Segoe UI',-apple-system,BlinkMacSystemFont,'Helvetica Neue',Helvetica,Arial,sans-serif" font-size="13" font-weight="400" fill="#a8a29e">Next.js 14 Pages Router to the Next.js 15 App Router.</text>
+      </g>
+      <g class="fade" style="animation-delay:.3s"><rect x="22" y="158" width="77" height="20" rx="10" fill="none" stroke="#2e2a27"/><text x="29 35.3 41.6 47.9 54.2 60.5 66.8 73.1 79.4 85.7" y="172" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#a8a29e" xml:space="preserve">Next.js 15</text><rect x="105" y="158" width="64.4" height="20" rx="10" fill="none" stroke="#2e2a27"/><text x="112 118.3 124.6 130.9 137.2 143.5 149.8 156.1" y="172" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#a8a29e" xml:space="preserve">NextAuth</text><rect x="175.4" y="158" width="64.4" height="20" rx="10" fill="none" stroke="#2e2a27"/><text x="182.4 188.7 195 201.3 207.6 213.9 220.2 226.5" y="172" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#a8a29e" xml:space="preserve">Recharts</text></g>
+      <g class="fade" style="animation-delay:.5s">
+      <g><text x="286 293.2 300.4 307.6 314.8 322" y="163" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#a8a29e" xml:space="preserve">pages/</text>
+        <animate attributeName="opacity" values="1;1;.25;.25;1" keyTimes="0;.3;.45;.9;1" dur="4s" repeatCount="indefinite"/></g>
+      <text x="336.4" y="163" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#57534e" xml:space="preserve">→</text>
+      <g opacity=".25"><text x="350.8 358 365.2 372.4" y="163" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#d4a054" font-weight="700" xml:space="preserve">app/</text>
+        <animate attributeName="opacity" values=".25;.25;1;1;.25" keyTimes="0;.3;.45;.9;1" dur="4s" repeatCount="indefinite"/></g></g>
+</svg>
