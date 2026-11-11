@@ -8,31 +8,44 @@ const H = 250;
 // while each phrase is only visible during its own slot of the cycle.
 function typewriter(t, x, y, phrases, size) {
   const cw = size * MONO_ADVANCE;
-  const TYPE = 0.065, DELETE = 0.028, HOLD = 1.9, GAP = 0.35;
+  const TYPE = 0.06, DELETE = 0.022, HOLD = 2.0, GAP = 0.45;
+  // Seeded jitter so typing has a human rhythm but the output is identical on every build.
+  let seed = 7;
+  const rand = () => ((seed = (seed * 16807) % 2147483647) / 2147483647);
   const events = []; // [time, charsShown]
   const slots = [];
   let time = 0;
   for (const p of phrases) {
-    const n = [...p].length;
+    const chars = [...p];
     const start = time;
-    for (let k = 0; k <= n; k++) events.push([time + k * TYPE, k]);
-    time += n * TYPE + HOLD;
-    for (let k = n - 1; k >= 0; k--) events.push([time + (n - 1 - k) * DELETE, k]);
-    time += n * DELETE + GAP;
+    events.push([time, 0]);
+    chars.forEach((ch, k) => {
+      // Brief hesitation after a space, a little randomness on every key.
+      time += TYPE * (0.6 + rand() * 0.8) + (chars[k - 1] === ' ' ? 0.05 : 0);
+      events.push([time, k + 1]);
+    });
+    time += HOLD;
+    for (let k = chars.length - 1; k >= 0; k--) {
+      time += DELETE;
+      events.push([time, k]);
+    }
+    time += GAP;
     slots.push([start, time]);
   }
   const T = time;
-  // Merge events that land on the same keyTime and make sure the list ends at 1.
-  const keyTimes = events.map(([s]) => r(s / T).toFixed(4));
+  // keyTimes need real precision: rounding them to 0.01 of a ~25s cycle
+  // would bunch several keystrokes into one jump.
+  const kt5 = (s) => (s / T).toFixed(5);
+  const keyTimes = events.map(([s]) => kt5(s));
   const widths = events.map(([, k]) => r(k * cw));
-  const carets = events.map(([, k]) => r(x + k * cw));
-  keyTimes.push('1'), widths.push(0), carets.push(r(x));
+  const carets = events.map(([, k]) => r(x + k * cw + 1));
+  keyTimes.push('1'), widths.push(0), carets.push(r(x + 1));
 
   const kt = keyTimes.join(';');
   const textEls = phrases
     .map((p, i) => {
       const [a, b] = slots[i];
-      const times = a === 0 ? `0;${(b / T).toFixed(4)}` : `0;${(a / T).toFixed(4)};${(b / T).toFixed(4)}`;
+      const times = a === 0 ? `0;${kt5(b)}` : `0;${kt5(a)};${kt5(b)}`;
       const values = a === 0 ? '1;0' : '0;1;0';
       return `<g opacity="${a === 0 ? 1 : 0}"><animate attributeName="opacity" values="${values}" keyTimes="${times}" calcMode="discrete" dur="${r(T)}s" repeatCount="indefinite"/>${mono(x, y, p, { size, fill: t.fg })}</g>`;
     })
@@ -43,7 +56,7 @@ function typewriter(t, x, y, phrases, size) {
     <animate attributeName="width" values="${widths.join(';')}" keyTimes="${kt}" calcMode="discrete" dur="${r(T)}s" repeatCount="indefinite"/>
   </rect></clipPath>
   <g clip-path="url(#type-clip)">${textEls}</g>
-  <rect x="${x}" y="${y - size + 2}" width="${r(cw * 0.55)}" height="${size + 2}" fill="${t.accent}" style="animation: blink 1s steps(1) infinite">
+  <rect x="${x + 1}" y="${y - size + 1}" width="2" height="${size + 4}" rx="1" fill="${t.accent}" style="animation: blink 1.05s steps(1) infinite">
     <animate attributeName="x" values="${carets.join(';')}" keyTimes="${kt}" calcMode="discrete" dur="${r(T)}s" repeatCount="indefinite"/>
   </rect>`;
 }
