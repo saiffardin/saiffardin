@@ -4,10 +4,10 @@ import { join } from 'node:path';
 import { profile } from '../data/profile.mjs';
 import { ROOT } from './lib.mjs';
 
-const pic = (name, alt, attrs = 'width="100%"') => `<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/${name}-dark.svg">
-  <img src="./assets/${name}-light.svg" alt="${alt.replace(/"/g, '&quot;')}" ${attrs}>
-</picture>`;
+// Kept on one line: any whitespace inside an <a> renders as an underlined space next to the image.
+// (GitHub strips target="_blank", so README links can't be forced into a new tab.)
+const pic = (name, alt, attrs = 'width="100%"') =>
+  `<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/${name}-dark.svg"><img src="./assets/${name}-light.svg" alt="${alt.replace(/"/g, '&quot;')}" ${attrs}></picture>`;
 
 export async function writeReadme() {
   const p = profile;
