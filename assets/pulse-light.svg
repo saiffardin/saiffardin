@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="230" viewBox="0 0 840 230" role="img" aria-labelledby="t d">
 <title id="t">Pulse: GitHub activity in the last year</title>
-<desc id="d">709 contributions in the last year across 134 active days; best streak 11 days. Languages: TypeScript 36%, JavaScript 34%, HTML 21%, Jupyter Notebook 4%, other 4%. Updated 2026-11-18.</desc>
+<desc id="d">709 contributions in the last year across 134 active days; best streak 11 days. Languages: TypeScript 36%, JavaScript 34%, HTML 21%, Jupyter Notebook 4%, other 4%. Updated 2026-11-19.</desc>
 <style>
   text { font-kerning: normal; }
   .rise { animation: rise .7s cubic-bezier(.2,.7,.2,1) both; }
@@ -15,7 +15,7 @@
   @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; } }
 </style>
 
-      <text x="0 7.2 14.4" y="14" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#a5691a" xml:space="preserve">07.</text><text x="28.8 36 43.2 50.4 57.6" y="14" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#1c1917" xml:space="preserve">pulse</text><line x1="78.8" y1="10" x2="618.1" y2="10" stroke="#e7e2dc" stroke-width="1" class="rule"/><text x="632.1 638.4 644.7 651 657.3 663.6 669.9 676.2 682.5 688.8 695.1 701.4 707.7 714 720.3 726.6 732.9 739.2 745.5 751.8 758.1 764.4 770.7 777 783.3 789.6 795.9 802.2 808.5 814.8 821.1 827.4 833.7" y="14" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#57534e" xml:space="preserve">live · rebuilt daily · 2026-11-18</text>
+      <text x="0 7.2 14.4" y="14" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#a5691a" xml:space="preserve">07.</text><text x="28.8 36 43.2 50.4 57.6" y="14" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="12" fill="#1c1917" xml:space="preserve">pulse</text><line x1="78.8" y1="10" x2="618.1" y2="10" stroke="#e7e2dc" stroke-width="1" class="rule"/><text x="632.1 638.4 644.7 651 657.3 663.6 669.9 676.2 682.5 688.8 695.1 701.4 707.7 714 720.3 726.6 732.9 739.2 745.5 751.8 758.1 764.4 770.7 777 783.3 789.6 795.9 802.2 808.5 814.8 821.1 827.4 833.7" y="14" font-family="'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,Consolas,'Liberation Mono',monospace" font-size="10.5" fill="#57534e" xml:space="preserve">live · rebuilt daily · 2026-11-19</text>
       <defs>
         <linearGradient id="pulse-fill" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stop-color="#a5691a" stop-opacity="0.2"/>
